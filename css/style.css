@@ -1,0 +1,240 @@
+main {
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+  font-size: 0.95rem;
+  background: rgb(253, 253, 253);
+}
+
+/* Accessibility */
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 3px solid purple;
+}
+
+/* Heading  */
+
+h2 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(46, 46, 46);
+  padding: 2rem 0;
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+/* Header */
+
+header p {
+  margin-bottom: 2rem;
+  color: rgb(172, 172, 172);
+}
+
+.signup {
+  border: none;
+  margin: 0 1rem;
+  padding: 0;
+  text-align: center;
+  border-bottom: 2px solid black;
+}
+
+.thick {
+  height: 0.25rem;
+  background-color: black;
+  margin-bottom: 0.25rem;
+}
+
+/* Main  */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.contact h3 {
+  color: black;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.contact {
+  height: auto;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  color: rgb(172, 172, 172);
+}
+
+.contact input {
+  background-color: rgb(233, 233, 233);
+  border: none;
+  width: 100%;
+}
+
+.contact input,
+select {
+  height: 2.25rem;
+  width: 100%;
+  margin: 0.5rem 0 0.75rem 0;
+  background-color: rgb(233, 233, 233);
+  border: none;
+  border-radius: 0.3rem;
+}
+
+select {
+  color: black;
+}
+
+::placeholder {
+  text-align: right;
+  font-style: italic;
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+  color: rgb(151, 151, 151);
+}
+
+#state {
+  color: rgb(46, 46, 46);
+}
+
+#zip_code {
+  width: 50%;
+  margin-right: 35%;
+}
+
+.newsletter {
+  border: none;
+  color: rgb(172, 172, 172);
+}
+
+.newsletter label {
+  line-height: 2rem;
+}
+
+.newsletter h3 {
+  color: black;
+  margin-bottom: 0;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  opacity: 0.55;
+  margin-right: 0.75rem;
+}
+
+.format {
+  padding-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.topics {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+textarea {
+  border: none;
+  width: 100%;
+  height: 6rem;
+  background-color: rgb(233, 233, 233);
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  width: 100%;
+  border: none;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: rgb(5, 174, 186);
+  padding: 1rem 0;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  margin: 0 0 12rem 0;
+  padding: 0 0;
+  color: rgb(172, 172, 172);
+  font-size: 1rem;
+}
+
+/* Media Queries  */
+
+@media (min-width: 768px) {
+  main {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  /* Heading  */
+
+  h2 {
+    padding: 1.25rem 0;
+  }
+
+  /* Header */
+
+  header h3 {
+    margin-top: 3rem;
+  }
+
+  header p {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Main  */
+
+  .contact h3 {
+    margin-top: 3rem;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  select {
+    width: 70%;
+    padding: 0;
+    margin-bottom: 1rem;
+    height: 3rem;
+  }
+
+  .input_box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  #zip_code {
+  width: 25%;
+  margin-right: 45%;
+ }
+
+  .newsletter {
+    border: none;
+    color: rgb(102, 102, 102);
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    opacity: 1;
+  }
+
+  textarea {
+    margin-bottom: 2rem;
+  }
+
+  /* Footer  */
+
+  footer {
+    color: rgb(191, 191, 191);
+    font-size: 1.25rem;
+  }
+}
